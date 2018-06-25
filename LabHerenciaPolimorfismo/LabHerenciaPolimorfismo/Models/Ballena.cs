@@ -5,16 +5,16 @@ using System.Web;
 
 namespace LabHerenciaPolimorfismo.Models {
 
-    public class Perro : Mamifero {
+    public class Ballena : Mamifero {
 
-        public Perro(String nombre) : base(4, nombre) {
+        public Ballena(string nombre) : base(0, nombre) {
         }
 
         public override string Hablar {
 
             get {
 
-                return base.Hablar + "Guau!!!";
+                return Nombre + " canta♪♪♪";
             }
         }
     }

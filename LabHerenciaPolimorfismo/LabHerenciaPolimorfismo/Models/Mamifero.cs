@@ -5,24 +5,45 @@ using System.Web;
 
 namespace LabHerenciaPolimorfismo.Models {
 
-    public abstract class Mamifero {
+    public abstract class Mamifero : Animal {
 
         private int cantidadPatas;
         private String nombre;
 
         protected Mamifero(int patas, String nombre) {
             cantidadPatas = patas;
-            this.nombre = nombre;
+
+            if (nombre != String.Empty)
+            {
+                this.nombre = nombre;
+            }
+            else
+            {
+                this.nombre = "Unknown";
+            }
         }
 
-        public abstract String Hablar();
+        public virtual String Hablar {
 
-        public String Respirar() {
-            return Nombre + " suspira...";
+            get {
+
+                return Nombre + " dice: ";
+            }
         }
 
-        public String Caminar() {
-            return Nombre + " avanza unos pasos con sus " + CantidadPatas +" patas...";
+        public String Respirar {
+
+            get {
+
+                return Nombre + " suspira...";
+            }
+        }
+
+        public String Caminar {
+            get {
+
+                return Nombre + " avanza unos pasos...";
+            }
         }
 
         protected int CantidadPatas => cantidadPatas;

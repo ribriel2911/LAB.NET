@@ -10,8 +10,12 @@ namespace LabHerenciaPolimorfismo.Models {
         public Humano(String nombre) : base(2, nombre) {
         }
 
-        public override string Hablar() {
-            return Nombre + " dice: Hola Mundo!!!";
+        public override string Hablar {
+
+            get {
+
+                return base.Hablar + "Hola Mundo!!!";
+            }
         }
     }
 }

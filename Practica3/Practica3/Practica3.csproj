@@ -8,12 +8,12 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6BE4220B-3138-4024-9752-A447B7498C0A}</ProjectGuid>
+    <ProjectGuid>{B14D3200-F67D-4DC8-A85D-049BB939AF0D}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>LabHerenciaPolimorfismo</RootNamespace>
-    <AssemblyName>LabHerenciaPolimorfismo</AssemblyName>
+    <RootNamespace>Practica3</RootNamespace>
+    <AssemblyName>Practica3</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -69,27 +69,70 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Interface\Adivinar.aspx" />
+    <Content Include="Interface\Main.aspx" />
+    <Content Include="Interface\Mañana.aspx" />
+    <Content Include="Interface\Multiplo.aspx" />
+    <Content Include="Interface\Positivos.aspx" />
+    <Content Include="Interface\Probabilidad.aspx" />
+    <Content Include="Interface\Sumador.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Ballena.cs" />
-    <Compile Include="Models\Gato.cs" />
-    <Compile Include="Models\Humano.cs" />
-    <Compile Include="Models\Animal.cs" />
-    <Compile Include="Models\Mamifero.cs" />
-    <Compile Include="Models\Perro.cs" />
-    <Compile Include="Models\Serpiente.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm.aspx.cs">
-      <DependentUpon>WebForm.aspx</DependentUpon>
+    <Compile Include="Interface\Adivinar.aspx.cs">
+      <DependentUpon>Adivinar.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm.aspx.designer.cs">
-      <DependentUpon>WebForm.aspx</DependentUpon>
+    <Compile Include="Interface\Adivinar.aspx.designer.cs">
+      <DependentUpon>Adivinar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Mañana.aspx.cs">
+      <DependentUpon>Mañana.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\Mañana.aspx.designer.cs">
+      <DependentUpon>Mañana.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Multiplo.aspx.cs">
+      <DependentUpon>Multiplo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\Multiplo.aspx.designer.cs">
+      <DependentUpon>Multiplo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interface\Probabilidad.aspx.cs">
+      <DependentUpon>Probabilidad.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\Probabilidad.aspx.designer.cs">
+      <DependentUpon>Probabilidad.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mechanics\Solver.cs" />
+    <Compile Include="Interface\Positivos.aspx.cs">
+      <DependentUpon>Positivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\Positivos.aspx.designer.cs">
+      <DependentUpon>Positivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Fecha.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Interface\Sumador.aspx.cs">
+      <DependentUpon>Sumador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interface\Sumador.aspx.designer.cs">
+      <DependentUpon>Sumador.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -117,9 +160,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>49818</DevelopmentServerPort>
+          <DevelopmentServerPort>51345</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:49818/</IISUrl>
+          <IISUrl>http://localhost:51345/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>

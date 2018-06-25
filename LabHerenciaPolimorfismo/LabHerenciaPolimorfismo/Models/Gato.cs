@@ -10,8 +10,12 @@ namespace LabHerenciaPolimorfismo.Models {
         public Gato(String nombre) : base(4, nombre) {
         }
 
-        public override string Hablar() {
-            return Nombre + " dice: Miau!!!";
+        public override string Hablar {
+
+            get {
+
+                return base.Hablar + "Miau!!!";
+            }
         }
     }
 }
