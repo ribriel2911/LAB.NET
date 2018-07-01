@@ -69,8 +69,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="Practica1.aspx" />
     <Content Include="Web.config" />
-    <Content Include="WebForm.aspx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Global.asax.cs">
@@ -83,14 +83,14 @@
     <Compile Include="Models\Mamifero.cs" />
     <Compile Include="Models\Perro.cs" />
     <Compile Include="Models\Serpiente.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WebForm.aspx.cs">
-      <DependentUpon>WebForm.aspx</DependentUpon>
+    <Compile Include="Practica1.aspx.cs">
+      <DependentUpon>Practica1.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="WebForm.aspx.designer.cs">
-      <DependentUpon>WebForm.aspx</DependentUpon>
+    <Compile Include="Practica1.aspx.designer.cs">
+      <DependentUpon>Practica1.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

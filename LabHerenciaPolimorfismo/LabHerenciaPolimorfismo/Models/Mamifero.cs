@@ -13,7 +13,7 @@ namespace LabHerenciaPolimorfismo.Models {
         protected Mamifero(int patas, String nombre) {
             cantidadPatas = patas;
 
-            if (nombre != String.Empty)
+            if (!String.IsNullOrEmpty(nombre))
             {
                 this.nombre = nombre;
             }

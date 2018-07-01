@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm.aspx.cs" Inherits="LabHerenciaPolimorfismo.WebForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Practica1.aspx.cs" Inherits="LabHerenciaPolimorfismo.Practica1" %>
 
 <!DOCTYPE html>
 
@@ -9,9 +9,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <p>
-            &nbsp;</p>
-        <asp:Button ID="Button1" runat="server" Text="Perro" />
+        <div>
+        </div>
     </form>
 </body>
 </html>
