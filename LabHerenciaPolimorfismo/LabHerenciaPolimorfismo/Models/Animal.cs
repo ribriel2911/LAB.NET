@@ -8,6 +8,8 @@ namespace LabHerenciaPolimorfismo.Models
 {
     interface Animal
     {
+        String GetNombre { get; }
+
         String Hablar { get; }
 
         String Caminar { get; }

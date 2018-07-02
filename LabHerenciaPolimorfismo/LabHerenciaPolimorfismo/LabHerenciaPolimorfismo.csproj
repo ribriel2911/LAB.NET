@@ -70,6 +70,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Practica1.aspx" />
+    <Content Include="Practica2.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -89,6 +90,13 @@
     </Compile>
     <Compile Include="Practica1.aspx.designer.cs">
       <DependentUpon>Practica1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Practica2.aspx.cs">
+      <DependentUpon>Practica2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Practica2.aspx.designer.cs">
+      <DependentUpon>Practica2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

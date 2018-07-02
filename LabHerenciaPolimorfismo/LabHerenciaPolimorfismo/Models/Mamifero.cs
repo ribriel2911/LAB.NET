@@ -46,6 +46,8 @@ namespace LabHerenciaPolimorfismo.Models {
             }
         }
 
+        public string GetNombre => Nombre;
+
         protected int CantidadPatas => cantidadPatas;
         protected String Nombre => nombre;
     }
