@@ -11,15 +11,16 @@ namespace Practica4.Interface
 {
     public partial class Exepcion3 : System.Web.UI.Page
     {
+
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
+            Solver.CeroDivision();
 
-            Response.Write(WebConfigurationManager.AppSettings);
+            TextBox1.Text = "Se guardo una nueva excepcion en: "+ WebConfigurationManager.AppSettings["Exeptions"];
         }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 
 namespace Practica4.Logic
 {
@@ -9,13 +10,12 @@ namespace Practica4.Logic
 
         String exepcion;
         String resultado;
-        String path;
+        static String path = WebConfigurationManager.AppSettings["Exeptions"];
 
         public Solver()
         {
             exepcion = "";
             resultado = "";
-            path = AppDomain.CurrentDomain.BaseDirectory + "/App_Data/Excepciones.txt";
         }
 
         public void StringDivision(String dividendo, String divisor)
@@ -57,6 +57,7 @@ namespace Practica4.Logic
 
             catch (DivideByZeroException e)
             {
+                guardarExcepcion(e);
                 return e.Message;
             }
 
@@ -76,11 +77,10 @@ namespace Practica4.Logic
 
         public static void LanzaExcepcion()
         {
-            throw new Models.UltraExcepcion("Generada Automaticamente");
-
+            throw new Models.UltraExcepcion("Generada Automaticamente"); 
         }
 
-        public void guardarExcepcion(Exception e)
+        public static void guardarExcepcion(Exception e)
         {
             System.IO.File.AppendAllText(path, e.StackTrace);
         }
